@@ -1,8 +1,8 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 name = "shopeefy-vn-checkout"
-client_id = "1008aa3bd90c14bff5295889d33a3620"
-application_url = "https://shopify.dev/apps/default-app-home"
+client_id = "1c0258772073038269571ca853495318"
+application_url = "https://example.com"
 embedded = true
 
 [access_scopes]
@@ -10,7 +10,7 @@ embedded = true
 scopes = ""
 
 [auth]
-redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+redirect_urls = [ "https://example.com/api/auth" ]
 
 [webhooks]
 api_version = "2023-10"
