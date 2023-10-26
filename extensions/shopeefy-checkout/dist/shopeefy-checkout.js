@@ -19501,13 +19501,13 @@ ${errorInfo.componentStack}`);
   // extensions/shopeefy-checkout/src/Checkout.tsx
   var import_jsx_runtime4 = __toESM(require_jsx_runtime());
   var Checkout_default = reactExtension(
-    "purchase.checkout.block.render",
+    "purchase.checkout.delivery-address.render-before",
     () => /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Extension, {})
   );
   function Extension() {
     const translate = useTranslate();
     const { extension: extension2 } = useApi();
-    return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Banner2, { title: "shopeefy-checkout", children: translate("welcome", { target: extension2.target }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(Banner2, { title: "Thank you!", status: "success", children: "Thank you so much for your order!" });
   }
 })();
 //# sourceMappingURL=shopeefy-checkout.js.map

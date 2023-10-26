@@ -3,11 +3,11 @@ import {
   useApi,
   useTranslate,
   reactExtension,
-} from '@shopify/ui-extensions-react/checkout';
+} from "@shopify/ui-extensions-react/checkout";
 
 export default reactExtension(
-  'purchase.checkout.block.render',
-  () => <Extension />,
+  "purchase.checkout.delivery-address.render-before",
+  () => <Extension />
 );
 
 function Extension() {
@@ -15,8 +15,8 @@ function Extension() {
   const { extension } = useApi();
 
   return (
-    <Banner title="shopeefy-checkout">
-      {translate('welcome', {target: extension.target})}
+    <Banner title="Thank you!" status="success">
+      Thank you so much for your order!
     </Banner>
   );
 }
